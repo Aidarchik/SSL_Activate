@@ -231,7 +231,7 @@ crontab -e
 
 # указываем команду для обновления сертификата и перезапуска Nginx
 
-@monthly cd /home/you_app_dir/ && docker compose up certbot --build && docker compose up nginx --build -d
+@monthly cd /root/SSL_Activate/ && docker compose up certbot --build && docker compose up nginx --build -d
 Готово, сертификат будет обновляться раз в месяц.
 
 Заключение
